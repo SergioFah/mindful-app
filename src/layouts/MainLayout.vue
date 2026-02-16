@@ -3,12 +3,12 @@
     <q-header class="bg-dark" height-hint="70">
       <q-toolbar>
 <!--        <q-btn dense flat round color="primary" icon="menu" @click="toggleLeftDrawer" />-->
-        <q-toolbar-title align="center"> Mindful </q-toolbar-title>
+        <q-toolbar-title align="center"> </q-toolbar-title>
       </q-toolbar>
-      <q-tabs v-model="tab" dense align="justify" animated>
-        <q-tab :ripple="false" name="to-do" label="To-do" />
-        <q-tab :ripple="false" name="habits" label="Habits" />
-        <q-tab :ripple="false" name="gratitude" label="Gratitude" />
+      <q-tabs dense align="justify" animated>
+        <q-route-tab :ripple="false" name="to-do" label="To-do" to="/" exact />
+        <q-route-tab :ripple="false" name="habits" label="Habits" to="/habits" exact />
+        <q-route-tab :ripple="false" name="gratitude" label="Gratitude" to="/gratitude" exact />
       </q-tabs>
     </q-header>
 <!--    <q-drawer v-model="leftDrawerOpen" side="left" overlay behavior="mobile"> </q-drawer>-->
@@ -19,10 +19,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
+// import { ref } from 'vue';
 // const leftDrawerOpen = ref(false);
-const tab = ref('alarms');
+// const tab = ref('alarms');
 
 // function toggleLeftDrawer() {
 //   leftDrawerOpen.value = !leftDrawerOpen.value;

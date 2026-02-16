@@ -1,0 +1,13 @@
+{
+  "name": "mindful-app",
+  "version": "0.0.1",
+  "description": "A simple to-do, graditude and habit tracker for a moment of clarity in your life.",
+  "author": "SergioFah",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^7.5.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}
