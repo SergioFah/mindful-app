@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <q-input class="col" v-model="text" color="primary" :dense="true" placeholder="..." />
+    <q-input class="col" v-model="text" @focusout="clearText" color="primary" :dense="true" placeholder="..." maxlength="100"/>
     <q-btn @click="addItem" :disable="!text" :ripple="false" flat color="primary" icon="add" dense />
   </div>
 </template>
@@ -14,6 +14,13 @@ const emit = defineEmits(['addItem'])
 function addItem () {
   emit('addItem', text.value);
   text.value = '';
+}
+
+function clearText () {
+  setTimeout(() => {
+    if (document.activeElement?.closest('.q-btn')) return;
+    text.value = '';
+  }, 200);
 }
 </script>
 

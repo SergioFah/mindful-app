@@ -29,6 +29,7 @@
             dense
             autofocus
             counter
+            maxlength="100"
             @keyup.enter="scope.set"
           />
         </q-popup-edit>

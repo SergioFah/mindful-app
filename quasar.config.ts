@@ -5,6 +5,11 @@ import { defineConfig } from '#q-app/wrappers';
 
 export default defineConfig((/* ctx */) => {
   return {
+    bin: {
+      // Substitua pela rota exata que você encontrou:
+      linuxAndroidStudio: '/home/sergiofah/Android Studio/bin/studio.sh',
+    },
+
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
 
