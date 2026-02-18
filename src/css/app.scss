@@ -4,6 +4,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   background: $dark;
   color: $primary;
+}
+
+.q-tab__label {
+  color: $primary;
+  font-size: 18px;
 }

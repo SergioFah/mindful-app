@@ -1,5 +1,5 @@
 <template>
-  <q-slide-item dark @right="emit('delete-item', props.id)" right-color="green">
+  <q-slide-item dark @right="emit('delete-item', props.id)" right-color="red">
     <template v-slot:right>
       <q-icon name="delete" />
     </template>
@@ -24,6 +24,7 @@
           @save="handleSave"
         >
           <q-input
+            dark
             v-model="scope.value"
             color="primary"
             dense

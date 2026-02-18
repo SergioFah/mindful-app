@@ -27,5 +27,6 @@ function clearText () {
 <style lang="scss">
 .q-field__native {
   color: $primary;
+  font-size: 18px;
 }
 </style>

@@ -18,6 +18,13 @@
   </q-layout>
 </template>
 
+<style scoped lang="scss">
+.q-tab__label {
+  color: $primary;
+  font-size: 18px;
+}
+</style>
+
 <script setup lang="ts">
 // import { ref } from 'vue';
 // const leftDrawerOpen = ref(false);
